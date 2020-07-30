@@ -1,5 +1,5 @@
+use art::types;
 use valora::prelude::*;
-mod types;
 
 pub struct NewsArticle {
     pub pallet: Vec<(f32, f32, f32)>,

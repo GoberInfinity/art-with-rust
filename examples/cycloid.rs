@@ -1,10 +1,9 @@
 // Original code written by: Jesus Ivan Rivera
 // https://youtu.be/qhbuKbxJsk8
+use art::types;
 use valora::prelude::*;
-mod tools;
-mod types;
 
-// cargo run --example ex1 -- -w 1200 -r 60
+// cargo run --example cycloid -- -r 60
 fn main() -> Result<()> {
     run_fn(Options::from_args(), |_, world, _| {
         let root_unit = |element: usize, theta: f32| {

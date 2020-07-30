@@ -1,10 +1,9 @@
+use art::tools;
+use std::iter;
 use valora::prelude::rand::rngs::ThreadRng;
 use valora::prelude::*;
-mod tools;
-mod types;
-use std::iter;
 
-// cargo run -- -w 1200 -r 60
+// cargo run --example spirograph -- -r 60
 fn main() -> Result<()> {
     run_fn(Options::from_args(), |_, world, _| {
         let theta = 0.3;
@@ -38,7 +37,7 @@ fn main() -> Result<()> {
         let mut last = empty_point;
         let mut color_point = LinSrgb::new(0., 0.3, 0.4);
 
-        Ok(move |ctx: Context, canvas: &mut Canvas| {
+        Ok(move |_: Context, canvas: &mut Canvas| {
             if angle > max_angle {
                 last = empty_point;
                 angle = 0.;

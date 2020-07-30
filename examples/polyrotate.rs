@@ -1,9 +1,8 @@
+use art::{tools, types};
 use std::collections::VecDeque;
 use valora::prelude::*;
-mod tools;
-mod types;
 
-// cargo run --example ex1 -- -w 1200 -r 60
+// cargo run --example polyrotate -- -r 60
 fn main() -> Result<()> {
     run_fn(Options::from_args(), |_, world, _| {
         let mut rng = rand::thread_rng();

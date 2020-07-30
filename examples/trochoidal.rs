@@ -1,12 +1,11 @@
 // https://en.wikipedia.org/wiki/Trochoidal_wave
+use art::tools;
 use std::f64::consts::E;
-use valora::prelude::*;
-mod tools;
-mod types;
 use std::iter;
 use valora::prelude::rand::rngs::ThreadRng;
+use valora::prelude::*;
 
-// cargo run --example ex1 -- -w 1200 -r 60
+// cargo run --example trochoidal -- -r 60
 fn main() -> Result<()> {
     run_fn(Options::from_args(), |_, world, _| {
         //Outer circle
