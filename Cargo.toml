@@ -1,0 +1,27 @@
+[package]
+name = "art"
+version = "0.1.0"
+authors = ["¨Gober¨ <reyesfragosoroberto@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+valora = "0.2.12"
+
+[[example]]
+name = "ex1"
+path = "src/polyrotate.rs"
+
+[[example]]
+name = "ex2"
+path = "src/spirograph.rs"
+
+[[example]]
+name = "ex3"
+path = "src/cycloid.rs"
+
+
+[[example]]
+name = "ex4"
+path = "src/trochoidal.rs"
